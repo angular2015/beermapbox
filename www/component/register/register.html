@@ -1,6 +1,34 @@
 <ion-view class="rgbg">
     <ion-content>
-        <div class="reg_bg">
+     <div class="navbar" style="margin-top:20px;">
+      <div class="navbar-brand text-center">
+        <span class="inline white">CHATT</span>
+      </div>
+    </div>
+      <div class="center-block w-xxl w-auto-xs">
+    <div class="p-lg panel md-whiteframe-z1 text-color m">
+      <div class="m-b text-sm">
+        Sign up to your CHATT Account
+      </div>
+      <form name="registerForm" ng-class="{'submitted': submitted}" ng-submit="register.register()">
+        <div class="md-form-group">
+          <input type="text" name="name" autocomplete="off" class="md-input" ng-model="register.user.name" required>
+          <label>Name</label>
+        </div>
+        <div class="md-form-group">
+          <input type="text" name="email" autocomplete="off" class="md-input" ng-model="register.user.email" required>
+          <label>Email</label> 
+        </div>
+        <div class="md-form-group">
+          <input type="password" name="password" autocomplete="off" class="md-input" ng-model="register.user.password" required>
+          <label>Password</label>
+        </div>
+        <button md-ink-ripple type="submit" class="md-btn md-raised pink btn-block p-h-md" ng-click="submitted = true;"><span ng-show="register.registerSpinner"><i class="fa fa-spin fa-spinner"></i></span> Sign up</button>
+        <a type="button" class="md-btn md-raised blue btn-block p-h-md" ui-sref="login"><span>Sign In</span></a>
+      </form>
+    </div>
+  </div>
+        <!-- <div class="reg_bg">
         <div class='reg_main'>
             <div class='reg_container'>
                 Register
@@ -35,6 +63,6 @@
             </div>
         </div>
             <div class="clear"></div>
-        </div>
+        </div> -->
     </ion-content>
 </ion-view> 

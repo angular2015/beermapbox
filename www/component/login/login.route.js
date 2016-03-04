@@ -1,12 +1,12 @@
 (function () {
     'use strict';
-    angular.module('beer.login').config(function ($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
+    angular.module('beerLocator').config(function ($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
 
         $stateProvider
                 .state('login', {
                     url: '/login',
 //                    views: {'mainView': {
-                            templateUrl: 'main/login/login.html',
+                            templateUrl: 'component/login/login.html',
                             controller: 'loginCtrl'
 //                        }}
 

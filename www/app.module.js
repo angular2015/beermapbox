@@ -4,6 +4,7 @@
         'ionic',
         'ngStorage',
         'beer.service',
+        'beer.login',
         'beer.menu',
         'beer.front',
         'map'
